@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+IIIF Range Prototype
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See the following:
+* `/app/models` contains `Structure`, `StructureRange`, `StructureCanvas` classes.
+* `/app/models/concerns/` contains `IiifRangeBuilder` which has a method to construct a Range hierarchy from IIIF JSON.
+* `/app/controllers/` contains a `RangeController` to handle GET/POST/PUT

@@ -4,6 +4,7 @@ class StructureRange < Structure
 
   def parent_range
     return nil unless structure_id
+
     StructureRange.find(structure_id)
   end
 
